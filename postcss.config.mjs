@@ -1,6 +1,6 @@
 const config = {
   plugins: {
-    "@tailwindcss/postcss": {},
+    // Intentionally empty: keep CSS build free of native PostCSS plugins.
   },
 };
 
