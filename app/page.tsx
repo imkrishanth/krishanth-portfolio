@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { Reveal } from "./components/reveal";
@@ -20,7 +21,7 @@ export default function Home() {
         <section className="noise hero-bg hero-unified">
           <Reveal className="hero-ref-shell" delayMs={70}>
             <div className="hero-ref-inner">
-              <div className="hero-ref-body">
+              <div className="hero-ref-body hero-ref-body--single">
                 <div className="hero-ref-content">
                   <h1 className="hero-ref-title">
                     Hi, I&apos;m {site.name}
@@ -52,7 +53,6 @@ export default function Home() {
                     </a>
                   </div>
                 </div>
-
               </div>
             </div>
           </Reveal>
@@ -65,6 +65,17 @@ export default function Home() {
                 <p className="kicker">A quick snapshot</p>
                 <h2 className="h2">About</h2>
                 <p className="lead">How I work, what I care about, and what you can expect.</p>
+                <div className="about-profile-wrap">
+                  <div className="about-profile-frame">
+                    <Image
+                      src="/profile-photo.jpeg"
+                      alt={`${site.name} profile photo`}
+                      width={320}
+                      height={380}
+                      className="about-profile-image"
+                    />
+                  </div>
+                </div>
               </div>
               <div>
                 <p className="subhead" style={{ marginTop: 0 }}>
