@@ -29,9 +29,11 @@ export default function ProjectsPage() {
                   </div>
 
                   <div className="project-links">
-                    <Link className="btn btn-ui" href={`/projects/${project.slug}`}>
-                      See UI Portfolio
-                    </Link>
+                    {(project.screenshots?.length ?? 0) > 1 ? (
+                      <Link className="btn btn-ui" href={`/projects/${project.slug}`}>
+                        See UI Portfolio
+                      </Link>
+                    ) : null}
                     {project.href ? (
                       <a
                         className="btn btn-secondary"

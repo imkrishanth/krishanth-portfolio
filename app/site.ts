@@ -144,8 +144,7 @@ export const site = {
       tags: ["React.js", "JavaScript", "Redux", "REST API", "Material UI"],
       screenshots: [
         "/projects/project-1/screenshot-1.png",
-        "/projects/project-1/screenshot-2.png",
-        "/projects/project-1/screenshot-3.png",
+ 
       ],
     },
     {
@@ -156,9 +155,51 @@ export const site = {
       appType: "mobile",
       tags: ["React Native", "TypeScript", "Redux", "REST API", "Axios"],
       screenshots: [
-        "/projects/project-2/screenshot-1.png",
-        "/projects/project-2/screenshot-2.png",
-        "/projects/project-2/screenshot-3.png",
+        "/ui/22yards/22yards-1.webp",
+        "/ui/22yards/22yards-2.webp",
+        "/ui/22yards/22yards-3.webp",
+        "/ui/22yards/22yards-4.webp",
+        "/ui/22yards/22yards-5.webp",
+        "/ui/22yards/22yards-6.webp",
+      ],
+    },
+    {
+      slug: "Learnza",
+      title: "Learnza (Mobile Application)",
+      description:
+        "Learnza is a cross-platform mobile revision app (Expo/React Native) built for A/L and HND students, combining structured study resources (notes, past papers, stream/semester/subject flow) with an “Ask Expert” Q&A feature and exam/leaderboard practice for Learnza Plus users. ",
+      appType: "mobile",
+      tags: ["React Native", "Expo", "TypeScript", "Redux", "REST API", "Axios", "Supabase", "SQL"],
+      screenshots: [
+        "/ui/learnza/learnza-1.jpg",
+        "/ui/learnza/learnza-2.jpg",
+        "/ui/learnza/learnza-3.jpg",
+        "/ui/learnza/learnza-4.jpg",
+        "/ui/learnza/learnza-5.jpg",
+        "/ui/learnza/learnza-6.jpg",
+        "/ui/learnza/learnza-7.jpg",
+        "/ui/learnza/learnza-8.jpg",
+        "/ui/learnza/learnza-9.jpg",
+        "/ui/learnza/learnza-10.jpg",
+      ],
+    },
+    {
+      slug: "LexActa",
+      title: "LexActa (Mobile Application)",
+      description:
+        "LexActa is a smart legal case management system designed to help lawyers organize cases, manage clients, and streamline legal workflows efficiently.",
+      appType: "mobile",
+      tags: ["React Native", "Expo", "TypeScript", "Redux", "REST API", "Axios", "MongoDb","Node.js"],
+      screenshots: [
+        "/ui/lexacta/lexacta-1.jpg",
+        "/ui/lexacta/lexacta-2.jpg",
+        "/ui/lexacta/lexacta-3.jpg",
+        "/ui/lexacta/lexacta-4.jpg",
+        "/ui/lexacta/lexacta-5.jpg",
+        "/ui/lexacta/lexacta-6.jpg",
+        "/ui/lexacta/lexacta-7.jpg",
+        "/ui/lexacta/lexacta-8.jpg",
+        "/ui/lexacta/lexacta-9.jpg",
       ],
     },
     {
@@ -170,8 +211,6 @@ export const site = {
       tags: ["React Native", "TypeScript", "Redux", "REST API", "Axios"],
       screenshots: [
         "/projects/project-3/screenshot-1.png",
-        "/projects/project-3/screenshot-2.png",
-        "/projects/project-3/screenshot-3.png",
       ],
     },
     {
@@ -214,8 +253,7 @@ export const site = {
       tags: ["React", "TypeScript", "Redux", "REST API", "Material UI"],
       screenshots: [
         "/projects/project-6/screenshot-1.png",
-        "/projects/project-6/screenshot-2.png",
-        "/projects/project-6/screenshot-3.png",
+      
       ],
     },
   ] as Project[],

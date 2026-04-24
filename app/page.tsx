@@ -153,6 +153,7 @@ export default function Home() {
                     title={project.title}
                     description={project.description}
                     tags={project.tags}
+                    screenshotsCount={project.screenshots?.length ?? 0}
                     href={project.href}
                     repo={project.repo}
                   />
@@ -259,6 +260,7 @@ function ProjectCard({
   title,
   description,
   tags,
+  screenshotsCount,
   href,
   repo,
   className,
@@ -267,6 +269,7 @@ function ProjectCard({
   title: string;
   description: string;
   tags: string[];
+  screenshotsCount: number;
   href?: string;
   repo?: string;
   className?: string;
@@ -285,9 +288,11 @@ function ProjectCard({
       </div>
 
       <div className="project-links">
-        <Link className="btn btn-ui" href={`/projects/${slug}`}>
-          See UI Portfolio
-        </Link>
+        {screenshotsCount > 1 ? (
+          <Link className="btn btn-ui" href={`/projects/${slug}`}>
+            See UI Portfolio
+          </Link>
+        ) : null}
         {href ? (
           <a className="btn btn-secondary" href={href} target="_blank" rel="noopener noreferrer">
             Live -&gt;
